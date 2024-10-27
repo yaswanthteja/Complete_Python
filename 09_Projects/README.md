@@ -4,3 +4,4 @@ We have two projects and overthought they look simple, they are densely packed w
 
 1. Cash Register
 2. Game - Save Zortan
+3. Snake Game

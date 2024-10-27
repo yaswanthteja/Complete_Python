@@ -55,7 +55,6 @@ I could visualize this final outcome after implementing `Step 2`, but I am menti
 
 For a beginner it would be little difficult to imagine how your final outcome would look like, but with practice it would get easier.
 
-
 ### Step 2 - Outline
 
 Now we have a brief idea about the expectations of the cash register, let's try to outline various objects needed to create a cash register.
@@ -114,7 +113,7 @@ Now since we know which objects we require, we can start coding, let's first ref
 | 4     |                    | ------     | get_invoice_total() | Calculates the invoice total         |
 | 4     |                    | ------     | display_invoice()   | Displays the invoice                 |
 
-What we have created here is technically known as `Unified Modelling Language Diagram`, to describe it is out of scope for this tutorial. Obviously UML Diagram is in a form of a diagram, I am just simplifying it and representing it here in a table format for your understanding. 
+What we have created here is technically known as `Unified Modelling Language Diagram`, to describe it is out of scope for this tutorial. Obviously UML Diagram is in a form of a diagram, I am just simplifying it and representing it here in a table format for your understanding.
 
 If you are interested then be sure to search and read more about [Unified Modelling Language](https://en.wikipedia.org/wiki/Unified_Modeling_Language)
 
@@ -124,7 +123,7 @@ In fact `FreeCodeCamp` has a [Full Course](https://www.youtube.com/watch?v=WnMQ8
 
 First two steps are the most time consuming and tedious steps, now comes the easy part! It's time to spin up your code editor and translate our outline to python code.
 
-As mentioned earlier, this is how our final outcome would look like - 
+As mentioned earlier, this is how our final outcome would look like -
 
 ```python
 {
@@ -167,7 +166,7 @@ Debugging is essentially an art, it's the process of finding out areas in your c
 
 What we want to do is, as soon as we code a module/class/object, we want to run it and see if it is working as expected. If not then try and debug the issue and when everything is resolved, then we move to coding the next module.
 
-Use of tools such as `Python Debugger` is out of the scope of this tutorial, if you want to learn more about it, message or tweet me on [@octallium](https://twitter.com/octallium)
+Use of tools such as `Python Debugger` is out of the scope of this tutorial, if you want to learn more about it
 
 ### Test
 
