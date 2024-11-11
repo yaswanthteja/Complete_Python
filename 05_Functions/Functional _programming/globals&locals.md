@@ -1,5 +1,9 @@
+    
+
+    
 
 ## globals() & locals() function
+
 symbol table: It is a data structure which contains all necessary  information about global space of the program
 
 ### global()
@@ -73,3 +77,46 @@ demo()
 hello
 100
 ```
+
+## non-local
+
+
+The nonlocal keyword in Python is used to work with variables inside nested functions, where the variable should not belong to the inner function. It allows you to modify a variable in the outer (non-global) scope.
+
+nonlocal keyword is used to indicate that a variable is not local to the current functions's scope but reffer's to a variable in the nearest enclosing(non-global) scope.
+
+### example: 
+When you have a nested function and you want to modify a variable defined in the outer function, but it isn't global, nonlocal comes into play.
+
+```
+def outer_function():
+    x = "Hello"
+    
+    def inner_function():
+        nonlocal x
+        x = "Hi"
+        print("Inner:", x)
+    
+    inner_function()
+    print("Outer:", x)
+
+outer_function()
+
+```
+
+### output:
+
+```
+Inner: Hi
+Outer: Hi
+
+```
+
+- outer_function(): This is the outer function where x is initially set to "Hello".
+
+- inner_function(): This is the nested function where we use nonlocal to indicate that x refers to the variable in outer_function.
+
+- nonlocal x: Without nonlocal, x inside inner_function would be treated as a local variable, and changes to it would not affect the x in outer_function.
+
+- The nonlocal keyword is essential for cases where you need to change the state of a variable from within a nested function, but that variable isn't global. It's quite handy for maintaining state in closures and more complex function structures!
+
