@@ -4,15 +4,10 @@ In programming, **literals are fixed values** (**actual values**) you can use di
  Python has a wide variety of literals. These include:
 
 - Integer Literals: Whole numbers, e.g., 100.
-
 - Float Literals: Numbers with a decimal point, e.g., 3.14.
-
 - String Literals: Text enclosed in quotes, e.g., "Hello", 'World'.
-
 - Boolean Literals: Truth values, True or False.
-
 - None Literal: Represents the absence of a value, None.
-
 - Complex Literals: Represent complex numbers, e.g., 3 + 4j.
 
 They’re essential because they allow you to provide constant values in your code directly.
@@ -309,7 +304,84 @@ Eg:
 
 ## float data type:
 
-We can use float data type to represent floating point values (decimal values)
+We can use float data type to represent floating point values (decimal values) which are real numbers (ex: 2.3,1.4 )
+
+In most the programming languages the numbers are stored in 64 bits which is used to equivaltent to  2^64 , ranging from  (0 to 2^64-1)
+ex:
+
+#### What are Floating Point Numbers?
+
+Floating point numbers are a way to represent real numbers (numbers with fractional parts) in computing. They consist of three parts: the sign bit, the exponent, and the mantissa (or significand).
+
+```
+0.1+0.2  // not 0.3
+```
+
+```
+0.30000000000000004
+```
+
+#### Converting into Decimal to binary
+
+![1734352293852](image/02_DataTypes/1734352293852.png)
+
+#### Converting Binary to decimal
+
+![1734352468959](image/02_DataTypes/1734352468959.png)
+
+Here why it is not 0.3,because 0.1 it converted into base2 and store the value and the same way 0.2 is also stored into base2 and then the result in binary
+
+#### Why 0.1 is Not Equal to 0.1 in Python
+
+This might sound strange, but let me explain. Computers use binary (base-2) system for computation, and not all decimal numbers can be represented exactly as binary fractions. The number 0.1 is one such example. In binary, 0.1 becomes an infinite repeating fraction:
+
+```
+0.000110011001100110011001100...
+```
+
+When Python (or any other programming language) tries to store this number, it can only store a finite number of digits. This leads to a slight approximation rather than an exact representation.
+
+#### Precision Loss
+
+When performing arithmetic operations with floating point numbers, these small approximations can lead to precision loss. Here's a simple example:
+
+```
+x = 0.1 + 0.2
+print(x == 0.3)  # This will return False
+print(x)        # This will print 0.30000000000000004
+
+```
+
+- Floating-point decimal values generally do not have an exact binary representation. This is a side effect of how the CPU represents floating point data. For this reason, you may experience some loss of precision, and some floating-point operations may produce unexpected results.
+- Binary approximation refers to the way computers represent decimal numbers in the binary (base-2) system. Unlike humans who use the decimal (base-10) system, computers use binary because it is simpler and more reliable for digital circuitry.
+
+#### Why Some Numbers Can't Be Represented Exactly
+
+- In the decimal system, we are used to numbers being represented with digits from 0 to 9. In binary, only the digits 0 and 1 are used. This can make it challenging to represent certain decimal numbers exactly.
+- For example, the number 0.1 cannot be precisely represented in binary. Here's why:
+- In decimal, 0.1 is a straightforward fraction (1/10).
+- In binary, 0.1 is equivalent to an infinite repeating fraction: 0.000110011001100110011001100...
+- Computers can only store a finite number of digits, so they have to truncate or round off this infinite sequence. This truncation leads to a slight approximation rather than an exact value.
+
+#### Handling Precision Issues
+
+To handle precision issues with floating point numbers in Python, you can use the decimal module which provides decimal floating point arithmetic with more precision and control over rounding.
+
+Here's an example of using the decimal module:
+
+```
+from decimal import Decimal
+
+x = Decimal('0.1') + Decimal('0.2')
+print(x == Decimal('0.3'))  # This will return True
+print(x)                    # This will print 0.3
+
+```
+
+By using Decimal, you can represent decimal numbers exactly and avoid the precision issues associated with binary floating point representation.
+
+Python uses IEEE 754 Standard ,which tells how number should be stored in binary .
+
 Eg:
 
 ```
