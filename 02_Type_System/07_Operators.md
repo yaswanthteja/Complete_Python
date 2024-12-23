@@ -1,0 +1,157 @@
+### What are Operators?
+
+Operators are special symbols or keywords in programming that perform operations on variables and values. They are the building blocks of programming logic, allowing us to manipulate data and variables to carry out computations, comparisons, and logical decisions.
+
+### Why We Need to Use Operators
+
+Operators are crucial because they:
+
+- Enable Calculations: Perform arithmetic operations like addition, subtraction, multiplication, etc.
+- Facilitate Comparisons: Compare values to make decisions based on conditions.
+- Implement Logic: Help in combining multiple conditions using logical operations.
+- Modify Values: Update variable values through assignment and arithmetic operations.
+- Work with Bits: Perform low-level bit manipulation necessary for performance-critical tasks.
+
+**Arithmetic Operators**
+
+| **Operator** | **Name** | **Example**  |
+| ------------------ | -------------- | ------------------ |
+| `+`              | Addition       | `5 + 3 = 8`      |
+| `-`              | Subtraction    | `5 - 3 = 2`      |
+| `*`              | Multiplication | `5 * 3 = 15`     |
+| `/`              | Division       | `5 / 3 = 1.6667` |
+| `//`             | Floor Division | `5 // 3 = 1`     |
+| `%`              | Modulus        | `5 % 3 = 2`      |
+| `**`             | Exponentiation | `5 ** 3 = 125`   |
+
+- Arithmetic operators are used to perform basic mathematical operations.
+- Addition (+): Adds two values. Example: 5 + 3 = 8
+- Subtraction (-): Subtracts the right value from the left. Example: 5 - 3 = 2
+- Multiplication (*): Multiplies two values. Example: 5 * 3 = 15
+- Division (/): Divides the left value by the right. Example: 5 / 3 = 1.6667
+- Floor Division (//): Divides and returns the largest integer less than or equal to the result. Example: 5 // 3 = 1
+- Modulus (%): Returns the remainder of the division. Example: 5 % 3 = 2
+- Exponentiation (**): Raises the left value to the power of the right value. Example: 5 ** 3 = 125
+
+**Comparison Operators**
+
+| **Operator** | **Name**           | **Example**  |
+| ------------------ | ------------------------ | ------------------ |
+| `==`             | Equal to                 | `5 == 3` (False) |
+| `!=`             | Not equal to             | `5 != 3` (True)  |
+| `>`              | Greater than             | `5 > 3` (True)   |
+| `<`              | Less than                | `5 < 3` (False)  |
+| `>=`             | Greater than or equal to | `5 >= 3` (True)  |
+| `<=`             | Less than or equal to    | `5 <= 3` (False) |
+
+- Comparison operators are used to compare two values.
+- Equal to (==): Checks if two values are equal. Example: 5 == 3 (False)
+- Not equal to (!=): Checks if two values are not equal. Example: 5 != 3 (True)
+- Greater than (>): Checks if the left value is greater than the right. Example: 5 > 3 (True)
+- Less than (<): Checks if the left value is less than the right. Example: 5 < 3 (False)
+- Greater than or equal to (>=): Checks if the left value is greater than or equal to the right. Example: 5 >= 3 (True)
+- Less than or equal to (<=): Checks if the left value is less than or equal to the right. Example: 5 <= 3 (False)
+
+**Logical Operators**
+
+| **Operator** | **Name** | **Example**          |
+| ------------------ | -------------- | -------------------------- |
+| `and`            | Logical AND    | `True and False` (False) |
+| `or`             | Logical OR     | `True or False` (True)   |
+| `not`            | Logical NOT    | `not True` (False)       |
+
+- Logical operators are used to combine conditional statements.
+- Logical AND (and): Returns True if both statements are true. Example: True and False (False)
+- Logical OR (or): Returns True if one of the statements is true. Example: True or False (True)
+- Logical NOT (not): Reverses the result, returns False if the result is true. Example: not True (False)
+
+**Assignment Operators**
+
+| **Operator** | **Name**          | **Example**                    |
+| ------------------ | ----------------------- | ------------------------------------ |
+| `=`              | Assign                  | `a = 5`                            |
+| `+=`             | Add and assign          | `a += 3` (same as `a = a + 3`)   |
+| `-=`             | Subtract and assign     | `a -= 3` (same as `a = a - 3`)   |
+| `*=`             | Multiply and assign     | `a *= 3` (same as `a = a * 3`)   |
+| `/=`             | Divide and assign       | `a /= 3` (same as `a = a / 3`)   |
+| `%=`             | Modulus and assign      | `a %= 3` (same as `a = a % 3`)   |
+| `//=`            | Floor divide and assign | `a //= 3` (same as `a = a // 3`) |
+| `**=`            | Exponentiate and assign | `a **= 3` (same as `a = a ** 3`) |
+
+- Assignment operators are used to assign values to variables.
+- Assign (=): Assigns a value to a variable. Example: a = 5
+- Add and assign (+=): Adds and assigns the result to a variable. Example: a += 3 (same as a = a + 3)
+- Subtract and assign (-=): Subtracts and assigns the result to a variable. Example: a -= 3 (same as a = a - 3)
+- Multiply and assign (*=): Multiplies and assigns the result to a variable. Example: a *= 3 (same as a = a * 3)
+- Divide and assign (/=): Divides and assigns the result to a variable. Example: a /= 3 (same as a = a / 3)
+- Modulus and assign (%=): Applies modulus and assigns the result to a variable. Example: a %= 3 (same as a = a % 3)
+- Floor divide and assign (//=): Applies floor division and assigns the result to a variable. Example: a //= 3 (same as a = a // 3)
+- Exponentiate and assign (**=): Raises to a power and assigns the result to a variable. Example: a **= 3 (same as a = a ** 3)
+
+**Membership Operators**
+
+| **Operator** | **Name** | **Example**             |
+| ------------------ | -------------- | ----------------------------- |
+| `in`             | Membership     | `'a' in 'apple'` (True)     |
+| `not in`         | Non-membership | `'b' not in 'apple'` (True) |
+
+- Membership operators are used to test if a sequence contains a specific value.
+- in: Returns True if a sequence contains the specified value. Example: 'a' in 'apple' (True)
+- not in: Returns True if a sequence does not contain the specified value. Example: 'b' not in 'apple' (True)
+
+**Identity Operators**
+
+| **Operator** | **Name** | **Example** |
+| ------------------ | -------------- | ----------------- |
+| `is`             | Identity       | `a is b`        |
+| `is not`         | Non-identity   | `a is not b`    |
+
+- Identity operators are used to compare the memory locations of two objects.
+- is: Returns True if two variables are the same object. Example: a is b
+- is not: Returns True if two variables are not the same object. Example: a is not b
+
+**Bitwise Operators**
+
+| **Operator** | **Name** | **Example** |
+| ------------------ | -------------- | ----------------- |
+| `&`              | AND            | `5 & 3` (1)     |
+| `                  | `              | OR                |
+| `^`              | XOR            | `5 ^ 3` (6)     |
+| `~`              | NOT            | `~5` (-6)       |
+| `<<`             | Left shift     | `5 << 1` (10)   |
+| `>>`             | Right shift    | `5 >> 1` (2)    |
+
+- Bitwise operators are used to perform bit-level operations on binary numbers.
+- AND (&): Performs a bitwise AND operation. Example: 5 & 3 (1)
+- OR (|): Performs a bitwise OR operation. Example: 5 | 3 (7)
+- XOR (^): Performs a bitwise XOR operation. Example: 5 ^ 3 (6)
+- NOT (~): Performs a bitwise NOT operation. Example: ~5 (-6)
+- Left shift (<<): Shifts the bits of the left operand left by the number of positions specified by the right operand. Example: 5 << 1 (10)
+- Right shift (>>): Shifts the bits of the left operand right by the number of positions specified by the right operand. Example: 5 >> 1 (2)
+
+### Walrus Operator
+
+- The Walrus operator (:=), introduced in Python 3.8, allows assignment of a value to a variable as part of an expression. or we can say
+  Walrus operators (:=) allows you to assign a value to variable as a part of expression
+- By using walrus the readility of code reduces.
+
+### With out walrus
+
+```python
+x=10
+if x>s:
+    print(x)
+
+```
+
+output: 10
+
+### With walrus operater
+
+```python
+if(x:=10) >5:
+    print(x)
+
+```
+
+output: 10
