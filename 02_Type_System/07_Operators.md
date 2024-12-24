@@ -1,3 +1,5 @@
+
+
 ### What are Operators?
 
 Operators are special symbols or keywords in programming that perform operations on variables and values. They are the building blocks of programming logic, allowing us to manipulate data and variables to carry out computations, comparisons, and logical decisions.
@@ -121,6 +123,15 @@ Operators are crucial because they:
 | `<<`             | Left shift     | `5 << 1` (10)   |
 | `>>`             | Right shift    | `5 >> 1` (2)    |
 
+**Bitwise Operations Table**
+
+| **Input (A, B)** | **AND (`&`)** | **OR (`\|`)** | **XOR (`^`)** | **Example**            |
+| ---------------------- | --------------------- | -------------------- | --------------------- | ---------------------------- |
+| 0, 0                   | 0                     | 0                    | 0                     | `0b0000 & 0b0000 = 0b0000` |
+| 0, 1                   | 0                     | 1                    | 1                     | `0b0000 & 0b0001 = 0b0000` |
+| 1, 0                   | 0                     | 1                    | 1                     | `0b0001 & 0b0000 = 0b0000` |
+| 1, 1                   | 1                     | 1                    | 0                     | `0b0001 & 0b0001 = 0b0001` |
+
 - Bitwise operators are used to perform bit-level operations on binary numbers.
 - AND (&): Performs a bitwise AND operation. Example: 5 & 3 (1)
 - OR (|): Performs a bitwise OR operation. Example: 5 | 3 (7)
@@ -128,6 +139,46 @@ Operators are crucial because they:
 - NOT (~): Performs a bitwise NOT operation. Example: ~5 (-6)
 - Left shift (<<): Shifts the bits of the left operand left by the number of positions specified by the right operand. Example: 5 << 1 (10)
 - Right shift (>>): Shifts the bits of the left operand right by the number of positions specified by the right operand. Example: 5 >> 1 (2)
+
+
+
+
+
+**Bitwise Operations Table**
+
+| **Operation**  | **Input** | **Binary Representation** | **Output**                     |
+| -------------------- | --------------- | ------------------------------- | ------------------------------------ |
+| AND (`&`)          | 5 & 3           | 0b0101 & 0b0011                 | 0b0001 (1)                           |
+| OR (`\|`)           | 5\| 3           | 0b0101\| 0b0011                 | 0b0111 (7)                           |
+| XOR (`^`)          | 5 ^ 3           | 0b0101 ^ 0b0011                 | 0b0110 (6)                           |
+| NOT (`~`)          | ~5              | ~0b0101                         | 0b1010 (-6, in 4-bit representation) |
+| Left Shift (`<<`)  | 5 << 1          | 0b0101 << 1                     | 0b1010 (10)                          |
+| Right Shift (`>>`) | 5 >> 1          | 0b0101 >> 1                     | 0b0010 (2)                           |
+
+
+The representation `0b100` is also a binary representation of a number. In Python, the prefix `0b` or `0B` is used to denote that the number is in binary format.
+
+Here’s how to interpret it:
+
+- **0b**: Indicates that the number following it is in binary form.
+- **100**: The actual binary digits.
+
+
+So, `0b100` in binary translates to:
+
+- 0b is the binary representation and 100 are the acutal number
+
+* 1 x 2^2 = 4
+* 0 × 2^1=0
+* 0 x 2^0 = 0
+
+
+- Each bit is indeed multiplied by a power of 2 based on its position in the binary sequence
+
+- Adding these values together, `0b100` is equal to 4 in decimal.
+
+This prefix (`0b`) is specific to Python and some other programming languages to differentiate binary numbers from decimal, octal, or hexadecimal numbers.
+
 
 ### Walrus Operator
 
