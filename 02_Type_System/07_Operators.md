@@ -140,8 +140,23 @@ Operators are crucial because they:
 - Left shift (<<): Shifts the bits of the left operand left by the number of positions specified by the right operand. Example: 5 << 1 (10)
 - Right shift (>>): Shifts the bits of the left operand right by the number of positions specified by the right operand. Example: 5 >> 1 (2)
 
+![1735134690417](image/07_Operators/1735134690417.png)
 
 
+
+![1735134707499](image/07_Operators/1735134707499.png)
+
+
+![1735134722724](image/07_Operators/1735134722724.png)
+
+
+![1735135024151](image/07_Operators/1735135024151.png)
+
+
+![1735134748094](image/07_Operators/1735134748094.png)
+
+
+![1735134759992](image/07_Operators/1735134759992.png)
 
 
 **Bitwise Operations Table**
