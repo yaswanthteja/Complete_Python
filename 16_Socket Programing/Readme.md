@@ -1,4 +1,4 @@
-Socket Programming in Python
+## Socket Programming in Python
 
 Socket programming is a way of connecting two nodes on a network to
 communicate with each other. One socket(node) listens on a particular port at
@@ -54,17 +54,17 @@ break
 ```
 
 - First, we import socket which is necessary.
-• Then we made a socket object and reserved a port on our pc.
-• After that, we bound our server to the specified port. Passing an empty
-string means that the server can listen to incoming connections from
-other computers as well. If we would have passed 127.0.0.1 then it
-would have listened to only those calls made within the local computer.
-• After that we put the server into listening mode.5 here means that 5
-connections are kept waiting if the server is busy and if a 6th socket tries
-to connect then the connection is refused.
-• At last, we make a while loop and start to accept all incoming
-connections and close those connections after a thank you message to
-all connected sockets.
+  • Then we made a socket object and reserved a port on our pc.
+  • After that, we bound our server to the specified port. Passing an empty
+  string means that the server can listen to incoming connections from
+  other computers as well. If we would have passed 127.0.0.1 then it
+  would have listened to only those calls made within the local computer.
+  • After that we put the server into listening mode.5 here means that 5
+  connections are kept waiting if the server is busy and if a 6th socket tries
+  to connect then the connection is refused.
+  • At last, we make a while loop and start to accept all incoming
+  connections and close those connections after a thank you message to
+  all connected sockets.
 
 # CLIENT
 
@@ -88,9 +88,9 @@ s.close()
 ```
 
 - First, we make a socket object.
-• Then we connect to localhost on port 12345 (the port on which our
-server runs) and lastly, we receive data from the server and close the
-connection.
-Run the server.py file first and then the client.py. See the output below
+  • Then we connect to localhost on port 12345 (the port on which our
+  server runs) and lastly, we receive data from the server and close the
+  connection.
+  Run the server.py file first and then the client.py. See the output below
 
 ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b1dbd28a-9a85-45cf-9f11-f160974e1f65/131e9898-8277-4b4a-b256-9d8c9eece7cc/Untitled.png)
