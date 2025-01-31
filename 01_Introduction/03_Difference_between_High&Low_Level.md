@@ -1,4 +1,11 @@
-**In essence, high-level code is for humans, low-level is for those who like to get their hands dirty with hardware specifics. and machine-level codes are for CPUs, bytecode is a middle ground. Each has its place in the computing world!**
+
+## **Code Terminology**
+
+**In essence,** 
+
+* **High-level code is for humans,**
+* **low-level is for those who like to get their hands dirty with hardware specifics. and machine-level codes are for CPUs.**
+* **Bytecode is a middle ground. Each has its place in the computing world!**
 
 ### **High-Level Code**
 

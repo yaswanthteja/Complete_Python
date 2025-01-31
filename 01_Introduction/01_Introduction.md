@@ -1,6 +1,4 @@
-## Python Language Fundamentals
-
-### Introduction
+## Introduction
 
 - Python is a general purpose high level programming language.
 - Python was developed by Guido Van Rossam in 1989 while working at National Research Institute at Netherlands.
@@ -11,7 +9,9 @@
 
 History of Python starts in the late 1980s at `Centrum Wiskunde` and `Informatica`, Python language was Designed by Guido Van Rossum and was first released in 1991. Python language is the successor of ABC Language which had the feature of exception handling. Guido Van Rossum worked on the creation of ABC and so he took the syntax and features of the language, then solved all the issues with the language and created a good scripting language.
 
-### Eg1: To print Helloworld:
+## Python Language Fundamentals
+
+**Example 1: To print Helloworld:**
 
 ## Java:
 
@@ -26,7 +26,7 @@ public class HelloWorld
 
 ```
 
-`C`
+## **`C language:`**
 
 ```
 
@@ -38,18 +38,17 @@ public class HelloWorld
 
 ```
 
-`Python`:
+## **`Python `:**
 
 ```
 print("Hello World")
 
 ```
 
+
+
 The name Python was selected from the TV Show
-"**The Complete
-Monty
-Python's
-Circus**", which was broadcasted in BBC from 1969 to 1974.
+"**The Complete Monty Python's Circus**", which was broadcasted in BBC from 1969 to 1974.
 Guido developed Python language by taking almost all programming features from
 different languages
 
@@ -83,55 +82,64 @@ Top Software companies like Google, Microsoft, IBM, Yahoo using Python.
 ### Features of Python:
 
 1. `Simple and easy to learn`:
-   Python is a simple programming language. When we read Python program,we can feel like
-   reading english statements.
-   The syntaxes are very simple and only 30+ kerywords are available.
-   When compared with other languages, we can write programs with very less number of
-   lines. Hence more readability and simplicity.
-   We can reduce development and cost of the project.
+
+   - Python is a simple programming language. When we read Python program,we can feel like
+     reading english statements.
+   - The syntaxes are very simple and only 30+ kerywords are available.When compared with other languages, we can write programs with very less number of
+     lines.
+   - Hence more readability and simplicity.We can reduce development and cost of the project.
 2. `Freeware and Open Source`:
-   We can use Python software without any licence and it is freeware.
-   Its source code is open,so that we can we can customize based on our requirement.
-   Eg: Jython is customized version of Python to work with Java Applications.
+
+   - We can use Python software without any licence and it is freeware.
+     Its source code is open,so that we can we can customize based on our requirement.
+   - Eg: Jython is customized version of Python to work with Java Applications.
 3. `High Level Programming language`:
-   Python is high level programming language and hence it is programmer friendly language.
-   Being a programmer we are not required to concentrate low level activities like memory
-   management and security etc..
+
+   - Python is high level programming language and hence it is programmer friendly language.
+     Being a programmer we are not required to concentrate low level activities like memory
+     management and security etc..
 4. `Platform Independent`:
-   Once we write a Python program,it can run on any platform without rewriting once again.
-   Internally PVM is responsible to convert into machine understandable form.
+
+   - Once we write a Python program,it can run on any platform without rewriting once again.
+     Internally PVM is responsible to convert into machine understandable form.
 5. `Portability`:
-   Python programs are portable. ie we can migrate from one platform to another platform
-   very easily. Python programs will provide same results on any platform.
+
+   - Python programs are portable. ie we can migrate from one platform to another platform
+     very easily. Python programs will provide same results on any platform.
 6. `Dynamically Typed`:
-   In Python we are not required to declare type for variables. Whenever we are assigning
-   the value, based on value, type will be allocated automatically.Hence Python is considered
-   as dynamically typed language.
-   But Java, C etc are Statically Typed Languages b'z we have to provide type at the beginning
-   only.
-   This dynamic typing nature will provide more flexibility to the programmer.
+
+   - In Python we are not required to declare type for variables. Whenever we are assigning
+     the value, based on value, type will be allocated automatically.Hence Python is considered
+     as dynamically typed language.
+   - But Java, C etc are Statically Typed Languages b'z we have to provide type at the beginning
+     only.
+     This dynamic typing nature will provide more flexibility to the programmer.
 7. `Both Procedure Oriented and Object Oriented`:
-   Python language supports both Procedure oriented (like C, pascal etc) and object oriented
-   (like C++,Java) features. Hence we can get benefits of both like security and reusability etc
+
+   - Python language supports both Procedure oriented (like C, pascal etc) and object oriented
+     (like C++,Java) features. Hence we can get benefits of both like security and reusability etc
 8. `Interpreted` :
-   We are not required to compile Python programs explcitly. Internally Python interpreter
-   will take care that compilation.
-   If compilation fails interpreter raised syntax errors. Once compilation success then PVM
-   (Python Virtual Machine) is responsible to execute.
+
+   - We are not required to compile Python programs explcitly. Internally Python interpreter
+     will take care that compilation.
+   - If compilation fails interpreter raised syntax errors. Once compilation success then PVM(Python Virtual Machine) is responsible to execute.
 9. `Extensible`:
-   We can use other language programs in Python.
-   The main advantages of this approach are:
+
+   - We can use other language programs in Python.
+     The main advantages of this approach are:
 
    1. We can use already existing legacy non-Python code
    2. We can improve performance of the application.
 10. `Embedded`:
-    We can use Python programs in any other language programs.
-    i.e we can embedd Python programs anywhere.
+
+    - We can use Python programs in any other language programs.
+      i.e we can embedd Python programs anywhere.
 11. `Extensive Library`:
-    Python has a rich inbuilt library.
-    Being a programmer we can use this library directly and we are not responsible to
-    implement the functionality.
-    etc..
+
+    - Python has a rich inbuilt library.
+    - Being a programmer we can use this library directly and we are not responsible to
+      implement the functionality.
+      etc..
 
 ## Limitations of Python:
 
@@ -142,13 +150,12 @@ Top Software companies like Google, Microsoft, IBM, Yahoo using Python.
 
 ## 1. `CPython`:
 
-It is the standard flavor of Python. It can be used to work with C lanugage Applications.
-The prefix “C ” denotes C programing language.
-This is a compiled programing language that converts the python code to the bytecode by compiling it, and then give the code to the interpreter.
-
-CPython was introduced in 1994 by Python community sponsored by Python Software Foundation.
- It is faster than the original python programing language because it is a compiled language.
- It is used as the Scientific and numeric calculations and also for creating python standard modules. CPython follows the coding rules and syntax of python programing language versions 2.x.
+- It is the standard flavor of Python. It can be used to work with C lanugage Applications.
+- The prefix “C ” denotes C programing language.
+  This is a compiled programing language that converts the python code to the bytecode by compiling it, and then give the code to the interpreter.
+- CPython was introduced in 1994 by Python community sponsored by Python Software Foundation.
+- It is faster than the original python programing language because it is a compiled language.
+- It is used as the Scientific and numeric calculations and also for creating python standard modules. CPython follows the coding rules and syntax of python programing language versions 2.x.
 
 ### What is Cython ?
 
@@ -181,7 +188,7 @@ Jython is another implementation of python programming language. It was introduc
 
 ### Example of Jpython :
 
-```
+```python
 #jpython Program 
 
 from java.lang import System # Java import
@@ -308,6 +315,7 @@ Python can run on different platforms like Windows, Mac, Linux, etc.
 # What is bytecode in Python
 
 You reffer this 04_Internal_working_of_Python.md to know in detail.
+
 ## ByteCode
 
 Machines are not able to understand the human language or high-level languages thus whenever we write code in any programming language, machine used a compiler or an interpreter to convert the human-readable code to machine code.

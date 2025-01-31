@@ -1,11 +1,11 @@
 # Internal Working Of Python
-  <img src="image/04_Internal_working_of_python/1730438117319.png" width=600px>    <img src="image/Internal_working_of_python/1729342662948.jpg" width="600px">            
+
+<img src="image/04_Internal_working_of_python/1730438117319.png" width=600px>    <img src="image/Internal_working_of_python/1729342662948.jpg" width="600px">
 
 ### **1. Source Code**
 
-When you write a Python script, it’s human-readable text. This source code is the starting point for everything.
-
-Your Python source code, written in a `.py` file, is human-readable. This code defines what your program does, specifying variables, functions, loops, and so on.
+- When you write a Python script, it’s human-readable text. This source code is the starting point for everything.
+- Your Python source code, written in a `.py` file, is human-readable. This code defines what your program does, specifying variables, functions, loops, and so on.
 
 ### **2. Compilation to Bytecode (compiler)**
 
@@ -55,17 +55,19 @@ After compilation, the Python Virtual Machine loads the bytecode:
 The PVM now interprets and executes the bytecode:
 
 * **Instruction Execution** : The PVM reads each bytecode instruction and executes it. Each instruction corresponds to a specific operation, like loading a value, performing arithmetic, or calling a function.
-* **Memory Management** : Manages allocation and deallocation of memory for variables and objects. **Memory Management in Python** :
+* #### **Memory Management** : Manages allocation and deallocation of memory for variables and objects.
 
-  1. **Reference Counting** : Python keeps track of how many references there are to an object in memory. When the reference count drops to zero, the memory occupied by the object can be reclaimed.
-  2. **Object Allocation** : Python objects (like integers, strings, lists) are created in memory when the code is run.
-  3. **Garbage Collection** : Python has a garbage collector that helps manage memory by deallocating memory that is no longer in use (i.e., objects with a reference count of zero).
-  4. **Memory Pooling** : Python uses pools of memory to allocate small objects more efficiently. This pooling helps reduce the overhead of frequently allocating and deallocating small chunks of memory.
-  5. **Memory Optimization** : Python applies various optimizations to minimize memory usage, such as:
+  ### **Memory Management in Python** :
 
-     * The PVM performs various runtime optimizations to improve efficiency, such as just-in-time (JIT) compilation in some implementations (like PyPy).
-     * Reusing small integers and interned strings.
-     * Efficiently managing data structures (e.g., tuples, lists, dictionaries).
+  1. **Reference Counting : Python keeps track of how many references there are to an object in memory.When the reference count drops to zero, the memory occupied by the object can be reclaimed.**
+  2. **Object Allocation : Python objects (like integers, strings, lists) are created in memory when the code is run.**
+  3. **Garbage Collection : Python has a garbage collector that helps manage memory by deallocating memory that is no longer in use (i.e., objects with a reference count of zero).**
+  4. **Memory Pooling : Python uses pools of memory to allocate small objects more efficiently. This pooling helps reduce the overhead of frequently allocating and deallocating small chunks of memory.**
+  5. **Memory Optimization : Python applies various optimizations to minimize memory usage, such as:**
+
+     * **The PVM performs various runtime optimizations to improve efficiency, such as just-in-time (JIT) compilation in some implementations (like PyPy).**
+     * **Reusing small integers and interned strings.**
+     * **Efficiently managing data structures (e.g., tuples, lists, dictionaries).**
 
      Examples :
 
@@ -76,6 +78,7 @@ The PVM now interprets and executes the bytecode:
      This involves simplifying constant expressions at compile time rather than runtime. For example,`3 * 2` might be precomputed to `6`.
 
 So, in summary: the PVM is like an orchestra conductor, seamlessly turning the bytecode into actions that your computer can execute. The beautiful thing about it is that Python code, thanks to the PVM, is portable and can run on different platforms without modification.
+
 
 ## How can we see byte code generated or not??
 
