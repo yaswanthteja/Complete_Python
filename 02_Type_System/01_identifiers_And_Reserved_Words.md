@@ -132,6 +132,7 @@ Note: In other languages functions are known as methods,procedures,subroutines e
 
 ### Python supports 2 types of functions
 
+
 1. Built in Functions
 
    Examples:
