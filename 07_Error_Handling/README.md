@@ -12,9 +12,10 @@
 2. divider.py - ZeroDivisionError
 3. smart_divider.py - Try & Execept
 4. really_smart_divider.py - Multiple Except
-5. try_else_finally.py - try..except..else..finally 
+5. try_else_finally.py - try..except..else..finally
 6. find_zohan.py - AssertionError
 7. find_zohan_2.py - Raising Exception
+8. Exception_handling.ipynb
 
 ## Reference
 
