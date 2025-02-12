@@ -88,7 +88,6 @@ IndexError: string index out of range
 
 `Note`: If we are trying to access characters of a string with out of range index then we will get error saying : IndexError
 
-
 Accesing from (-)ve index
 
 ```python-repl
@@ -102,15 +101,11 @@ Output
 ''
 ```
 
-
-
-It will return empty string 
+It will return empty string
 
 Slicing works like this: `String[start:stop:step]`. **When you slice from a higher index to a lower index, the default step is `1`, so it can't go backwards unless you specify a negative step.**
 
 So `num[-2:-6]` essentially means “start at the second-to-last element and go up to, but not including, the sixth-to-last element,” but since it can't move backwards with the default step, it returns nothing.
-
-
 
 To slice backwards, use a negative step:
 
@@ -120,8 +115,6 @@ print(num[-2:-6:-1])
 
 # Outputs: [8, 7, 6, 5]
 ```
-
-
 
 # Assignment
 
@@ -170,7 +163,7 @@ Eg:
 - if +ve then it should be forward direction(left to right) and we have to consider begin to end-1
 - if -ve then it should be backward direction(right to left) and we have to consider begin to end+1
 
-*** Note:
+ **Note**:
 
 - In the backward direction if end value is -1 then result is always empty.
 - In the forward direction if end value is 0 then result is always empty.
@@ -231,7 +224,7 @@ Python contains the following methods for this purpose.
 6) istitle(): Returns True if string is in title case
 7) isspace(): Returns True if string contains only spaces
 
-```
+```python
 s=input("Enter any character:") 
 if s.isalnum(): 
     print("Alpha Numeric Character") 
