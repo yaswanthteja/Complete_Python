@@ -9,6 +9,8 @@
 - connector or driver
 - python
 
+You Can reffer Python_Database_installation.md for installation steps.
+
 To work with SQL databases in Python, you will need the following installations:
 
 1. **SQL Database** (any flavor):
