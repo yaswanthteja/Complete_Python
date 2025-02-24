@@ -11,7 +11,7 @@ Operators are crucial because they:
 - Implement Logic: Help in combining multiple conditions using logical operations.
 - Modify Values: Update variable values through assignment and arithmetic operations.
 - Work with Bits: Perform low-level bit manipulation necessary for performance-critical tasks.
-<br/>
+  `<br/>`
 
 **Arithmetic Operators**
 
@@ -30,7 +30,7 @@ Operators are crucial because they:
 - Arithmetic operators are used to perform basic mathematical operations.
 - Addition (+): Adds two values. Example: 5 + 3 = 8
 - Subtraction (-): Subtracts the right value from the left. Example: 5 - 3 = 2
-- Multiplication (*): Multiplies two values. Example: 5 * 3 = 15
+- Multiplication (*): Multiplies two values (multiplication essentially means adding a number a certain number of times ). Example: 5 * 3 = 15
 - Division (/): Divides the left value by the right. Example: 5 / 3 = 1.6667
 - Floor Division (//): Divides and returns the largest integer less than or equal to the result. Example: 5 // 3 = 1
 - Modulus (%): Returns the remainder of the division. Example: 5 % 3 = 2
@@ -48,7 +48,6 @@ Operators are crucial because they:
 | `<`              | Less than                | `5 < 3` (False)  |
 | `>=`             | Greater than or equal to | `5 >= 3` (True)  |
 | `<=`             | Less than or equal to    | `5 <= 3` (False) |
-
 
 <br/>
 
@@ -131,7 +130,7 @@ Operators are crucial because they:
 - Identity operators are used to compare the memory locations of two objects.
 - is: Returns True if two variables are the same object. Example: a is b
 - is not: Returns True if two variables are not the same object. Example: a is not b
-<br/>
+  `<br/>`
 
 **Bitwise Operators**
 
@@ -146,57 +145,40 @@ Operators are crucial because they:
 
 <br/>
 
-
 **Bitwise Operations Table**
 
-
-
-| **INPUT A**       | **Input B**       | **AND (`&`)**         | **OR (`\|`)**        | **XOR (`^`)**         | **Example**               |
+| **INPUT A** | **Input B** | **AND (`&`)** | **OR (`\|`)** | **XOR (`^`)** | **Example**            |
 | ----------------- | ----------------- | --------------------- | -------------------- | --------------------- | ---------------------------- |
 | 0                 | 0                 | 0                     | 0                    | 0                     | `0b0000 & 0b0000 = 0b0000` |
 | 0                 | 1                 | 0                     | 1                    | 1                     | `0b0000 & 0b0001 = 0b0000` |
 | 1                 | 0                 | 0                     | 1                    | 1                     | `0b0001 & 0b0000 = 0b0000` |
 | 1                 | 1                 | 1                     | 1                    | 0                     | `0b0001 & 0b0001 = 0b0001` |
 
-
-
 <br/>
-
 
 - Bitwise operators are used to perform bit-level operations on binary numbers.
-- AND (&): Performs a bitwise AND operation. 
-   
-      Example: 5 & 3 (1)
-            0101 & 0011 --> 0001
+- AND (&): Performs a bitwise AND operation.
 
-
+  Example: 5 & 3 (1)
+  0101 & 0011 --> 0001
 - OR (|): Performs a bitwise OR operation.
-     
-      Example: 5 | 3 (7)
-              0101 | 0011 --> 0111
 
-
+  Example: 5 | 3 (7)
+  0101 | 0011 --> 0111
 - XOR (^): Performs a bitwise XOR operation.
-       
-       Example: 5 ^ 3 (6)
-                0101 ^ 0011 --> 0110
 
-
+  Example: 5 ^ 3 (6)
+  0101 ^ 0011 --> 0110
 - NOT (~): Performs a bitwise NOT operation.
 
-        Example: ~5 (-6)
+  Example: ~5 (-6)
+- Left shift (<<): Shifts the bits of the left operand left by the number of positions specified by the right operand.
 
-- Left shift (<<): Shifts the bits of the left operand left by the number of positions specified by the right operand. 
-
-      Example: 5 << 1 (10)
-
-
+  Example: 5 << 1 (10)
 - Right shift (>>): Shifts the bits of the left operand right by the number of positions specified by the right operand.
-       Example: 5 >> 1 (2)
+  Example: 5 >> 1 (2)
 
 <br/>
-
-
 
 ![1735134690417](image/07_Operators/1735134690417.png)
 
