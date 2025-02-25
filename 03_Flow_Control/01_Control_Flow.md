@@ -89,7 +89,7 @@ Output -2
 Enter password name
 Incorrect Password
 ```
-
+<br/>
 
 ## 3. Chain multiple if statement in Python
 In Python, the if-elif-else condition statement has an elif blocks to chain multiple conditions one after another. This is useful when you need to check multiple conditions.
@@ -133,7 +133,7 @@ Guest
 Wrong entry
 ```
 
-
+<br/>
 
 ## 4. Nested if-else statement
 In Python, the nested if-else statement is an if statement inside another if-else statement. It is allowed in Python to put any number of if statements in another if statement.
@@ -176,6 +176,7 @@ Enter second number 15
 56 is greater than 15
 
 ```
+<br/>
 
 ## Iterative Statements
 
@@ -185,7 +186,7 @@ Python supports 2 types of iterative statements.
 1. for loop
 2. while loop
 
-## 1) for loop:
+## 1. for loop:
 
 - If we want to execute some action for every element present in some sequence(it may be string or collection)then we should go for for loop.
 Syntax:
@@ -220,10 +221,10 @@ c
 e
 ```
 
+<br/>
 
 
-
-## 2) while loop:
+## 2. while loop:
 
 If we want to execute a group of statements iteratively until some condition false,then we should go for while loop.
 ## Syntax:
@@ -261,6 +262,7 @@ Eg: To display the sum of first n numbers
  print("Hello",i) 
 ```
 
+<br/>
 
 ## 3. Transfer statements
 
@@ -291,7 +293,10 @@ D:\Python_classes>py test.py
  processing is enough..plz break 
 
 ```
-## 2) continue:
+
+<br/>
+
+## 2. continue:
 We can use continue statement to skip current iteration and continue next iteration.
 
 Eg 1: To print odd numbers in the range 0 to 9
@@ -308,7 +313,7 @@ D:\Python_classes>py test.py
 7 
 9 
 ```
-
+<br/>
 
 ## pass statement:
 pass is a keyword in Python.
@@ -359,3 +364,5 @@ D:\Python_classes>py test.py
  99
 
 ```
+
+<br/>
