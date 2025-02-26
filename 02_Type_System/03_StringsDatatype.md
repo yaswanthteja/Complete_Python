@@ -116,6 +116,8 @@ print(num[-2:-6:-1])
 # Outputs: [8, 7, 6, 5]
 ```
 
+<br/>
+
 # Assignment
 
 1.Write a program to accept some string from the keyboard and display its characters by index wise(both positive and nEgative index)
@@ -212,6 +214,8 @@ print(len(s)) #
 6
 ```
 
+<br/>
+
 ## To check type of characters present in a string:
 
 Python contains the following methods for this purpose.
@@ -223,6 +227,8 @@ Python contains the following methods for this purpose.
 5) isupper(): Returns True if all characters are upper case aplhabet symbols
 6) istitle(): Returns True if string is in title case
 7) isspace(): Returns True if string contains only spaces
+
+<br/>
 
 ```python
 s=input("Enter any character:") 
