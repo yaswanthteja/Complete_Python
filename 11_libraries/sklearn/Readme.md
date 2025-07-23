@@ -101,6 +101,17 @@ from sklearn.impute import SimpleImputer
 imputer = SimpleImputer(strategy='mean')
 X = imputer.fit_transform(X)
 ```
+
+| Task              | Tool                    | sklearn Function                  |
+| ----------------- | ----------------------- | --------------------------------- |
+| Missing values    | Fill with mean/median   | `SimpleImputer`                   |
+| Scaling           | Normalize numbers       | `StandardScaler` / `MinMaxScaler` |
+| Encoding          | Convert text to numbers | `LabelEncoder`, `OneHotEncoder`   |
+| Feature selection | Pick best features      | `SelectKBest`, `RFE`              |
+
+
+
+
 b) Scaling Features
 
 Scaling Features
@@ -155,6 +166,13 @@ from sklearn.preprocessing import OneHotEncoder, LabelEncoder
 
 
 ## Step 4: Split the Data
+
+We split the data into:
+
+- Training Set: Learn from this(70/80 % split )
+- Test Set: Evaluate on this (30/20 % split )
+
+
 ```python
 
 from sklearn.model_selection import train_test_split
@@ -165,6 +183,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 
 ## Step 5: Train the Model
+
+
+
 Example: Classification
 ```python
 
@@ -173,6 +194,16 @@ from sklearn.ensemble import RandomForestClassifier
 model = RandomForestClassifier()
 model.fit(X_train, y_train)
 ```
+
+| Task                     | Model Example            | Import                  |
+| ------------------------ | ------------------------ | ----------------------- |
+| Classification           | `RandomForestClassifier` | `sklearn.ensemble`      |
+| Regression               | `LinearRegression`       | `sklearn.linear_model`  |
+| Clustering               | `KMeans`                 | `sklearn.cluster`       |
+| Dimensionality Reduction | `PCA`                    | `sklearn.decomposition` |
+
+
+
 
 ## Step 6: Make Predictions
 ```python
