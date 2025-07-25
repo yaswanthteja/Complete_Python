@@ -58,7 +58,7 @@ pip install scikit-learn
 
 ## 📂 Step 1: Load the Data
 
-### 📦 Built-in Dataset
+### 📦 To load built-in Datasets
 
 ```python
 from sklearn.datasets import load_iris
