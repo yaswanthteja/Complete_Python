@@ -16,6 +16,7 @@ Data structures allow for efficient storage, retrieval, and manipulation of data
 There are a number of collection types in Python. While types such as int and str hold a single value, collection
 types hold multiple values.
 
+A single variable or identifier used to store multiple values
 
 # Data Structures
 
