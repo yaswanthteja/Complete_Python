@@ -10,7 +10,7 @@ Three built in higher order functions:
 
 ### filter()
 
-filter() is used to filter out  the elements of iterable
+filter() is used to filter out  the elements of iterable based on a condition and it takes 2 arguments which is function name and iterable
 
 syntax:
 
@@ -48,7 +48,7 @@ print(list(filtered_object))
 
 **in filter() only once we can consume(use) the items .**
 
-**and again we try to print them then it returns empty** 
+**and again we try to print them then it returns empty**
 
 **if we want to print filtered object multiple times we need to  type caste that to list**
 
