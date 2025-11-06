@@ -1,3 +1,11 @@
+## Iterator vs iterable vs iteration
+
+Iterable :- An iterable is an object you can loop over
+
+Iterator An iterator is the object thta does the looping (or) travers through a sequence of ddata with out storing the  data in the memory one item at a time
+
+Iteration is the process of looping through elements
+
 ## Iterator
 
 Iterators are a fundamental concept in Python that enable you to traverse through all the elements of a collection (like lists, tuples, dictionaries, etc.). They provide a systematic way to access elements sequentially without needing to know the underlying structure of the collection.
