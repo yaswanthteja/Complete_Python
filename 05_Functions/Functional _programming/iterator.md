@@ -2,11 +2,28 @@
 
 Iterable :- An iterable is an object you can loop over
 
-Iterator An iterator is the object thta does the looping (or) travers through a sequence of ddata with out storing the  data in the memory one item at a time
+Iterator An iterator is the object thta does the looping (or) travers through a sequence of data with out storing the  data in the memory one item at a time
 
 Iteration is the process of looping through elements
 
-## Iterator
+Iterarion using the for loop:
+
+```python
+data=[10,20,30]
+
+for ele in data:  
+    print(ele)
+```
+
+It iterates through list and prints each element
+
+10
+
+20
+
+30
+
+### Iterator
 
 Iterators are a fundamental concept in Python that enable you to traverse through all the elements of a collection (like lists, tuples, dictionaries, etc.). They provide a systematic way to access elements sequentially without needing to know the underlying structure of the collection.
 
@@ -42,20 +59,153 @@ print(next(iterator))  # Output: 2
 print(next(iterator))  # Output: 3
 ```
 
+
+
+```python
+L=[10,20,30,40]
+iter_obj=iter(L)  # iterator
+
+print(type(iter_obj))  # <class 'list_iterator'>
+
+# to access elements 
+print(next(iter_obj))  # 10
+print(next(iter_obj)) # 20
+print(next(iter_obj)) # 30
+print(next(iter_obj)) #40
+print(next(iter_obj)) #  StopIteration exception
+
+```
+
+
+
+* we can create an iterator by using iter() abd by passing sn iterable object eg: list,string
+* we need next() and by using the iter object to access the element eg: iter_obj (iter object reference)
+
+- next() remembers the state of the iterator, so each call to next() continues from where the last call left off.
+- This is why each call to next() returns the subsequent item in the sequence.
+
+  Example:
+- Here next() function is used to get the next item from the iterator.
+- The first call to next(it) retrieves the first item (1) from the iterator.
+- The second call to next(it) retrieves the second item (2) from the iterator.
+- The third call to next(it) retrieves the third item (3) from the iterator.
+- The fourth call to next(it) retrieves the fourth item (4) from the iterator.
+- every time next() is called, it returns the next item in the sequence until there are no more items left.
+- When there are no more items to return, a StopIteration exception is raised.
+
+
+
+### Example : How a next() knows the current  iteration?
+
+
+Python creates an **iterator object** with:
+
+* A  **reference to the original list** .
+* An **internal index** (starts at 0).
+
+
+Each time you call `next(iter_obj)`:
+
+* Python looks at `L[index]`.
+* Returns that value.
+* Increments `index` by 1.
+* If `index` exceeds the list length, it raises `StopIteration`.
+
+
+```python
+## next() knows the current iteration
+
+L=[10,20,30,40]
+
+iter_obj=iter(L) # iterator
+
+print(next(iter_obj)) #10
+print(next(iter_obj)) # 20
+
+for ele in iter_obj:
+    print(ele)       #30
+                     # 40
+```
+
+
+
+### How to check an object is iterable or iterator?
+
+```python
+
+L=[10,20,30,40]
+
+print(dir(L)) # it only contains __iter__  so this is iterable
+```
+
+```python
+iter_obj=iter(L) 
+print(dir(iter_obj)) # It contains __iter__ and __next__ so this is an iterator 
+```
+
+
+
 ### Benefits of Iterators:
 
 - Memory Efficiency: Iterators compute values one at a time, which is memory efficient, especially when working with large datasets.
 - Lazy Evaluation: Items are generated as needed, allowing for efficient data processing.
 - Simplifies Code: Provides a simple and clean syntax for iterating over sequences.
 
-### Custom Iterators:
+
+
+
+
+### Making your own for loop
+
+
+```python
+
+L=[10,20,30,40]
+
+def for_loop(iterable):
+    iterator=iter(iterable)
+    try:
+        while True:
+            print(next(iterator))
+    except StopIteration:
+        pass
+for_loop(L)
+```
+
+
+
+##### using recursion
+
+
+```python
+def for_loop(iterable):
+    iterator = iter(iterable)
+  
+    def loop():
+        try:
+            print(next(iterator))
+            loop()  # recursive call
+        except StopIteration:
+            pass
+
+    loop()
+
+# Example
+L = [10, 20, 30, 40]
+for_loop(L)
+
+```
+
+
+
+### Custom Iterators: Creating our own range ()
 
 You can create custom iterators by defining a class with `__iter__()` and  `__next__()` methods.
 
 Example:
 
 ```python
- class MyIterator:
+class Myrange:
     def __init__(self, start, end):
         self.current = start
         self.end = end
@@ -70,9 +220,12 @@ Example:
         self.current += 1
         return current
 
-my_iter = MyIterator(1, 4)
+
+my_iter = Myrange(1, 4)
+
 for value in my_iter:
     print(value)
+
 ```
 
 So here is the output
