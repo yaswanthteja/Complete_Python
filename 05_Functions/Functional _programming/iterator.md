@@ -59,8 +59,6 @@ print(next(iterator))  # Output: 2
 print(next(iterator))  # Output: 3
 ```
 
-
-
 ```python
 L=[10,20,30,40]
 iter_obj=iter(L)  # iterator
@@ -75,8 +73,6 @@ print(next(iter_obj)) #40
 print(next(iter_obj)) #  StopIteration exception
 
 ```
-
-
 
 * we can create an iterator by using iter() abd by passing sn iterable object eg: list,string
 * we need next() and by using the iter object to access the element eg: iter_obj (iter object reference)
@@ -93,16 +89,12 @@ print(next(iter_obj)) #  StopIteration exception
 - every time next() is called, it returns the next item in the sequence until there are no more items left.
 - When there are no more items to return, a StopIteration exception is raised.
 
-
-
 ### Example : How a next() knows the current  iteration?
-
 
 Python creates an **iterator object** with:
 
 * A  **reference to the original list** .
 * An **internal index** (starts at 0).
-
 
 Each time you call `next(iter_obj)`:
 
@@ -110,7 +102,6 @@ Each time you call `next(iter_obj)`:
 * Returns that value.
 * Increments `index` by 1.
 * If `index` exceeds the list length, it raises `StopIteration`.
-
 
 ```python
 ## next() knows the current iteration
@@ -127,8 +118,6 @@ for ele in iter_obj:
                      # 40
 ```
 
-
-
 ### How to check an object is iterable or iterator?
 
 ```python
@@ -143,20 +132,13 @@ iter_obj=iter(L)
 print(dir(iter_obj)) # It contains __iter__ and __next__ so this is an iterator 
 ```
 
-
-
 ### Benefits of Iterators:
 
 - Memory Efficiency: Iterators compute values one at a time, which is memory efficient, especially when working with large datasets.
 - Lazy Evaluation: Items are generated as needed, allowing for efficient data processing.
 - Simplifies Code: Provides a simple and clean syntax for iterating over sequences.
 
-
-
-
-
 ### Making your own for loop
-
 
 ```python
 
@@ -172,10 +154,7 @@ def for_loop(iterable):
 for_loop(L)
 ```
 
-
-
 ##### using recursion
-
 
 ```python
 def for_loop(iterable):
@@ -195,8 +174,6 @@ L = [10, 20, 30, 40]
 for_loop(L)
 
 ```
-
-
 
 ### Custom Iterators: Creating our own range ()
 
@@ -295,6 +272,31 @@ for number in counter:
 3
 4
 5
+```
+
+
+### **Using Custom iterators buid a range() including step**
+
+```python
+# range with step
+class MyRange:
+    def __init__(self,start,end,step=1):
+        self.current=start
+        self.end=end
+        self.step=step
+
+    def __iter__(self):
+        return self
+  
+    def __next__(self):
+        if (self.step >0 and self.current>=self.end) or (self.step<0 and self.current<=self.end):
+            raise StopIteration
+        value=self.current
+        self.current+=self.step
+        return value
+  
+    for num in MyRange(1,10,2):
+        print(num)
 ```
 
 ### Internal Working:
