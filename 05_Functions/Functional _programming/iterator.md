@@ -2,7 +2,7 @@
 
 Iterable :- An iterable is an object you can loop over
 
-Iterator An iterator is the object thta does the looping (or) travers through a sequence of data with out storing the  data in the memory one item at a time
+Iterator An iterator is the object that does the looping (or) travers through a sequence of data with out storing the  data in the memory one item at a time
 
 Iteration is the process of looping through elements
 
@@ -273,7 +273,6 @@ for number in counter:
 4
 5
 ```
-
 
 ### **Using Custom iterators buid a range() including step**
 
