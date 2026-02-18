@@ -6,3 +6,11 @@
 __pycache__
 __pycache__/*
 scratchpad/
+
+# Virtual environment
+
+.venv
+
+## Environment variables
+
+.env 
